@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSCO</title>
+    <link rel="stylesheet"  href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img id="startup" src="./images/startupLogo.png">
+    <nav>
+        <div>
+            <img id="logo" href="index.html" src="./images/logo.png">
+        </div>
+    
+        <ul>
+            <li> <a href="#home"> HOME </a> </li>
+            <li> <a href="#productsTitle" class="black"> PRODUTOS </a> </li>
+            <li> <a href="#petsTitle"> PETS</a></li>
+            <li> <a href="#aboutTitle" class="black"> SOBRE </a> </li>
+            <div id="divSearch">
+              <input type="text" id="txtSearch" placeholder="Digite..."/>
+              <button id="btnSearch"><img id="glass" src="./images/search.png"></button>
+            </div>
+                <button id="btnSearchMobile"><img id="glassMobile" src="./images/searchMobile.png"></button>
+                <button id="btnBag"><img id="bag" src="./images/bag.png"></button>
+                <button id="btnMenuMobile" onclick="clickMenu()"><img id="menuMobile" src="./images/menuMobile.png"></button>
+        </ul>
+    </nav>
+
+    <ul id="hamburgerMenuMobile">
+        <li> <a href="#home"> HOME </a> </li>
+        <li> <a href="#productsTitle"> PRODUTOS </a> </li>
+        <li> <a href="#petsTitle"> PETS</a></li>
+        <li> <a href="#aboutTitle"> SOBRE </a> </li>
+    </ul>
+    
+    
+<div id="home" class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="./images/ban1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./images/ban2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./images/ban3.jpg" style="width:100%">
+    </div>
+  
+  <div id="divDot" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<div id="mainPage">
+  <h1 id="productsTitle">PRODUTOS</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis perspiciatis, reiciendis distinctio. Eius consectetur, voluptatum ratione non dolorem mollitia qui sunt incidunt id nam nisi suscipit rem.</p>
+        
+        <div id="scrolling-wrapper">
+            <div class="card">
+                <img src="./images/prod1.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 1</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod2.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 2</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod3.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 3</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod4.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 4</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod1.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 5</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod2.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 6</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod3.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 7</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/prod4.png">
+                <div class="card-content">
+                    <h3>CATEGORIA 8</h3>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+          </div>
+
+          <span id="slideLeft" type="button"> <img id="SL" src="./images/slideLeft.png"> </span>
+          <span id="slideRight" type="button"> <img id="SR" src="./images/slideRight.png"> </span>
+
+          <h1 id="petsTitle">PETS</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis perspiciatis, reiciendis distinctio. Eius consectetur, voluptatum ratione non dolorem mollitia qui sunt incidunt id nam nisi suscipit rem.</p>
+        
+          <div id="scrolling-wrapper-pets">
+              <div class="card">
+                  <img src="./images/pet1.jpg">
+                  <div class="card-content">
+                      <h3>NOME DO ANIMAL</h3>
+                      <h2>DADOS DO PET</h2>
+                      <a href="" class="btn">EXPLORAR</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./images/pet2.jpg">
+                  <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                      <a href="" class="btn">EXPLORAR</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./images/pet3.jpg">
+                  <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                      <a href="" class="btn">EXPLORAR</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./images/pet4.jpg">
+                  <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                      <a href="" class="btn">EXPLORAR</a>
+                  </div>
+              </div>
+              <div class="card">
+                <img src="./images/pet1.jpg">
+                <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pet2.jpg">
+                <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pet3.jpg">
+                <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pet4.jpg">
+                <div class="card-content">
+                    <h3>NOME DO ANIMAL</h3>
+                    <h2>DADOS DO PET</h2>
+                    <a href="" class="btn">EXPLORAR</a>
+                </div>
+            </div>
+  </div>
+  
+            <span id="slideLeftPets" type="button"> <img id="SL" src="./images/slideLeft.png"> </span>
+            <span id="slideRightPets" type="button"> <img id="SR" src="./images/slideRight.png"> </span>
+</div>
+</div>
+<img id="transitionImage" src="./images/transition.png">
+<div id="aboutPage">
+    <h1 id="aboutTitle">SOBRE</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio in similique quaerat quidem nostrum, molestiae ipsam sunt tempora optio facere ad explicabo numquam vitae architecto officia accusantium eligendi minus excepturi? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+    <div id="contacts">
+    <h2 class="contactInfo"><pre> <span class="highlight"> <img class="media" src="./images/zap.png" height="30"> - (99)99999-9999</pre> </span> </h2>
+    <h2 class="contactInfo"><pre> <span class="highlight"> <img class="media" src="./images/insta.png" height="30"> - PETSHOP</pre> </span> </h2>
+    <h2 class="contactInfo"><pre> <span class="highlight"> <img class="media" src="./images/face.png" height="30"> - PETSHOP</pre> </span> </h2>
+    <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
