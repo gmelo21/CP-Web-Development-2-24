@@ -88,6 +88,7 @@ nav li a:hover{
 #divSearch{
   background-color:#E0EEEE;
   border:solid 2px #FEFEFE;
+  display: flex;
   border-radius: 10px 0px 0px 10px;
   width:249px;
   height:35px;
@@ -309,6 +310,7 @@ nav li a:hover{
   text-align: center;
   margin-left: -1%;
   transition: 0.2s;
+  font-size: 25px;
 }
 
 .card-content .btn:hover{
@@ -529,7 +531,7 @@ nav li a:hover{
   }
 
   #scrolling-wrapper {
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
@@ -544,7 +546,7 @@ nav li a:hover{
   }
   
   #scrolling-wrapper-pets {
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
